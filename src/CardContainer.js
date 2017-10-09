@@ -1,9 +1,15 @@
 import React from 'react';
 import Card from './Card';
 import PropTypes from 'prop-types';
-import styles from './styles/CardContainer.css';
+import './styles/CardContainer.css';
 
 const borderColors = ['blue-border', 'green-border'];
+
+const defineBorderColor = (displayArrayCard, comparisonArray) => {
+  return (comparisonArray.findIndex( (comparisonArrayCard) => {
+    return comparisonArrayCard.location === displayArrayCard.location;
+  }));
+};
 
 const CardContainer = ({ dataArray, onCardClick, comparisonArray }) => (
   <section>
@@ -21,12 +27,6 @@ const CardContainer = ({ dataArray, onCardClick, comparisonArray }) => (
     )}
   </section>
 );
-
-const defineBorderColor = (displayArrayCard, comparisonArray) => {
-  return (comparisonArray.findIndex( (comparisonArrayCard) => {
-    return comparisonArrayCard.location === displayArrayCard.location;
-  }));
-};
 
 CardContainer.propTypes = {
   dataArray: PropTypes.array,
