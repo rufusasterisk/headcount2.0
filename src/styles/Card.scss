@@ -1,19 +1,22 @@
-@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,600,700");
-
 article {
   border: 1px solid black;
   min-width: 300px;
   min-height: 400px;
   margin: 10px 0px 10px 0px;
-  font-family: 'Dosis', sans-serif;
   margin-left: 10px;
   margin-right: 10px;
+  background-color: #fff;
+}
+
+article:hover {
+  cursor: pointer;
 }
 
 h3 {
   text-align: center;
   margin: 0px 0px 0px 0px;
   padding: 15px 0px 15px 0px;
+  border-bottom: 1px solid black;
 }
 
 
