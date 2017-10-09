@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import comparisoncardcss from './styles/ComparisonCard.css';
+import './styles/ComparisonCard.css';
 
-const ComparisonCard = ( 
+const ComparisonCard = (
   { locationOne, locationTwo, averageOne, averageTwo, comparisonData}
 ) => (
   <article className='comparison-card'>
